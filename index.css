@@ -29,7 +29,7 @@ header {
 }
 
 nav ul {
-    list-style: none;   
+    list-style: none;
     display: flex;
     gap: 8px;
 }
@@ -37,10 +37,10 @@ nav ul {
 nav ul li a {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
-    font-size: 0.7rem;    
+    font-size: 0.7rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    padding: 6px 8px;         
+    padding: 6px 8px;
 }
 
 nav ul li a:hover {
@@ -48,36 +48,110 @@ nav ul li a:hover {
 }
 
 section {
-    height: 100vh;          
-    width: 100%;          
-    display: flex;         
-    flex-direction: column; 
-    justify-content: flex-end; 
-    padding: 0 0 80px 80px; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-}
-
-section:nth-child(1) {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
+    padding: 0 0 80px 80px;
 }
-#bg-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 1;
-  object-fit: cover;
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
 }
 
 .content {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
+    color: white;
 }
 
+#bg-image-section-1 {
+    background-image: url("Revolutionizing_Space_Tech_Mobile_45093b17b7.jpg");
+    background-size: cover;
+    background-position: center;
+}
 
+#bg-image-section-2 {
+    background-image: url(Advancing_Human_Spaceflight_Mobile_af242fde31.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background-color: #000;
+    padding: 30px 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15); 
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+}
+
+footer ul li a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+}
+
+footer ul li a:hover {
+    color: #fff;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    min-width: 120px;
+}
+
+footer a {
+    min-width: 120px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer a button {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 8px 18px;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+footer a button:hover {
+    color: #fff;
+    border-color: #fff;
+}
