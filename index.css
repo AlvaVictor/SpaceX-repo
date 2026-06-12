@@ -47,3 +47,37 @@ nav ul li a:hover {
     color: #fff;
 }
 
+section {
+    height: 100vh;          
+    width: 100%;          
+    display: flex;         
+    flex-direction: column; 
+    justify-content: flex-end; 
+    padding: 0 0 80px 80px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+section:nth-child(1) {
+    position: relative;
+    overflow: hidden;
+}
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+
